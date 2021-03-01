@@ -1,0 +1,28 @@
+{
+  "name": "ping-coming-soon-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Ping coming soon page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html --no-source-maps --open",
+    "prod": "parcel build index.html --no-cache --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "parcelCleanPaths": [
+    "dist",
+    ".cache"
+  ],
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "parcel-plugin-clean-easy": "^1.0.2",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "core-js": "^3.9.0",
+    "regenerator-runtime": "^0.13.7"
+  }
+}

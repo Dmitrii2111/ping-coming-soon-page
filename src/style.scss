@@ -61,6 +61,10 @@ body{
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            .input_wrap{
+               display: flex;
+               flex-direction: column;
+            }
             input {
                height: 40px;
                border-radius: 20px;
@@ -69,11 +73,13 @@ body{
             .not_valid{
                border: solid 1px $error_color;
             }
-            .errorMessage{
+            #error_label{
                color: $error_color;
                font-size: 12px;
-               left: 35%;
-               top: 28%;
+               margin-top: 45px;
+               margin-left: 10px;
+               // left: 35%;
+               // top: 28%;
                position: absolute;
             }
             .valid{
@@ -150,7 +156,11 @@ body{
    }
    
 }
-
+@media (max-width: 1217px) {
+   main .subscribe .subscribe__submit{
+      margin-top: 20px !important;
+   }
+}
 @media (max-width:375px) {
    main span{
       font-size: 14px;
@@ -169,6 +179,7 @@ body{
    main .subscribe .subscribe__submit{
       min-width: 315px !important;
       margin-left: 0 !important;
+      margin-top: 20px !important;
    }
    main .img_wrap{
       width: 90% !important;
